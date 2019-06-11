@@ -1,0 +1,42 @@
+html, body
+{
+    padding: 0px; 
+    margin: 0px;
+    font-size: 12px;
+    font-family: helvetica;
+
+}
+
+nav
+{
+    padding: 10px;
+    background-color: #7Acc2d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+
+}
+
+nav li{
+    padding-left: 20px;
+    list-style: none;
+
+    
+}
+
+nav li a
+{
+    color: grey;
+    text-decoration: none;
+}
+
+nav li a:hover
+{
+color: white;
+
+}

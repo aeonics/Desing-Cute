@@ -1,14 +1,13 @@
-html, body
-{
-    padding: 0px; 
-    margin: 0px;
+body,
+html {
+    padding: 0;
+    margin: 0;
     font-size: 12px;
     font-family: helvetica;
 
 }
 
-nav
-{
+nav {
     padding: 10px;
     background-color: #7Acc2d;
     color: white;
@@ -17,26 +16,49 @@ nav
     align-items: center;
 }
 
-nav ul{
+nav ul {
     display: flex;
 
 }
 
-nav li{
+nav li {
     padding-left: 20px;
     list-style: none;
 
-    
 }
 
-nav li a
-{
+nav li a {
     color: grey;
     text-decoration: none;
 }
 
-nav li a:hover
-{
-color: white;
+nav li a:hover {
+    color: white;
 
 }
+
+/* Main Section */
+
+.main_section {
+    padding: 20%;
+    text-align: center;
+}
+
+.products {
+    background-image: url("../images/curve.png");
+    height: 200px;
+    background-size: cover;
+    background-position: center top;
+    padding: 15%;
+    display: flex;
+}
+
+.product
+{
+    padding: 10px;
+}
+.product .content {
+    background-color: white;
+    padding: 20px;
+
+    }

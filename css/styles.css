@@ -1,16 +1,33 @@
+/* Fuentes externas */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* Variables */
+:root {
+    --green-color: #7Acc2d;
+    --white-color: white;
+    --black-color: #313337;
+/* tipodgrafia */
+    --normal:12px;
+    /* Espaciado */
+    --space:10px;
+    /* Box shadow */
+    --box:0 0 1px #c1bcbc;
+}
+/* Variables */
+
 body,
 html {
     padding: 0;
     margin: 0;
-    font-size: 12px;
-    font-family: helvetica;
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
 
 }
 
 nav {
-    padding: 10px;
-    background-color: #7Acc2d;
-    color: white;
+    padding: var(--space);
+    background-color: var(--green-color);
+    color:var(--white-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,12 +45,12 @@ nav li {
 }
 
 nav li a {
-    color: grey;
+    color:var(--black-color);
     text-decoration: none;
 }
 
 nav li a:hover {
-    color: white;
+    color:var(--white-color);
 
 }
 
@@ -46,19 +63,39 @@ nav li a:hover {
 
 .products {
     background-image: url("../images/curve.png");
-    height: 200px;
+    max-height: 50px;
     background-size: cover;
     background-position: center top;
-    padding: 15%;
+    padding: 20%;
     display: flex;
 }
 
-.product
-{
-    padding: 10px;
+.product {
+    padding: var(--space);
+    margin-top: -250px;
 }
 .product .content {
-    background-color: white;
-    padding: 20px;
+    background-color:var(--white-color);
+    padding: var(--space);
+    box-shadow: var(--box);
 
-    }
+}
+
+.image_content {
+    text-align: center;
+}
+
+.main_button {
+    background-color: var(--green-color);
+    width: 100%;
+    padding: var(--space);
+    font-size: var(--normal);
+    color:var(--white-color);
+    border: 0;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.main_button:hover {
+    background-color: #5e9e22;
+}
